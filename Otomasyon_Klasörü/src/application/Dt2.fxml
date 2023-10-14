@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="dt2Pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="541.0" style="-fx-background-color: #ffe4e1;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Dt2Controller">
+   <children>
+      <ImageView fitHeight="90.0" fitWidth="82.0" layoutY="-8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@dis1.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="158.0" layoutY="46.0" prefHeight="26.0" prefWidth="206.0" style="-fx-background-color: #ffc0cb;" text="       GNC Diş Kliniği">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="117.0" text="Hasta TC." />
+      <Label layoutX="50.0" layoutY="183.0" text="Yapılan İşlem :" />
+      <TextField fx:id="txt_tc" layoutX="173.0" layoutY="113.0" promptText="TC. Giriniz" />
+      <ComboBox fx:id="cmb_islem" layoutX="172.0" layoutY="179.0" prefWidth="150.0" promptText="İşlemi Seçiniz" />
+      <Button fx:id="btn_kaydet" layoutX="208.0" layoutY="282.0" mnemonicParsing="false" onAction="#btn_kaydet_Click" prefHeight="26.0" prefWidth="105.0" style="-fx-background-color: #ffb6c1;" text="Kaydet">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_temizle" layoutX="390.0" layoutY="282.0" mnemonicParsing="false" onAction="#btn_temizle_Click" prefHeight="26.0" prefWidth="90.0" style="-fx-background-color: #ffb6c1;" text="Temizle">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="btn_randevu" layoutX="206.0" layoutY="329.0" mnemonicParsing="false" onAction="#btn_randevu_Click" style="-fx-background-color: #ffb6c1;" text="Randevu Oluştur">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="btn_cikis" layoutX="391.0" layoutY="328.0" mnemonicParsing="false" onAction="#btn_cikis_Click" prefHeight="26.0" prefWidth="90.0" style="-fx-background-color: #ff0000;" text="İşlem Bitti">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Label layoutX="398.0" layoutY="25.0" style="-fx-background-color: #ffffff;" text="Dt. Eda ŞAHİN" textFill="#9e0303" />
+      <Label fx:id="lbl_sonuc" layoutX="61.0" layoutY="223.0" />
+      <ImageView fitHeight="26.0" fitWidth="41.0" layoutX="323.0" layoutY="330.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@randevu.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="23.0" layoutX="324.0" layoutY="282.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@ekle.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="41.0" layoutX="486.0" layoutY="284.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@temizle.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="41.0" layoutX="486.0" layoutY="330.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@cikis.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

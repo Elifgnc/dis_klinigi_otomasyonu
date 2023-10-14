@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="loginPane" prefHeight="406.0" prefWidth="372.0" style="-fx-background-color: #ffefd5;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.loginController">
+   <children>
+      <TextField fx:id="txt_kul" layoutX="161.0" layoutY="115.0" prefHeight="26.0" prefWidth="118.0" promptText="Kullanıcı Ad" />
+      <PasswordField fx:id="txt_pass" layoutX="161.0" layoutY="170.0" prefHeight="26.0" prefWidth="117.0" promptText="Sifre" />
+      <Button fx:id="btn_giris" layoutX="30.0" layoutY="259.0" mnemonicParsing="false" onAction="#btn_giris_Click" prefHeight="26.0" prefWidth="95.0" style="-fx-background-color: #ffdab9;" text="Giriş" />
+      <Button fx:id="btn_cikis" layoutX="214.0" layoutY="313.0" mnemonicParsing="false" onAction="#btn_cikis_Click" prefHeight="26.0" prefWidth="95.0" style="-fx-background-color: #ff0000;" text="Çıkış" />
+      <Button fx:id="btn_bilgi" layoutX="28.0" layoutY="313.0" mnemonicParsing="false" onAction="#btn_bilgi_Click" prefHeight="26.0" prefWidth="95.0" style="-fx-background-color: #ffdab9;" text="Bilgi" />
+      <Label layoutX="109.0" layoutY="35.0" prefHeight="26.0" prefWidth="178.0" style="-fx-background-color: #ffa07a;" text="   GNC Diş Kliniği">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="79.0" fitWidth="77.0" layoutX="-7.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@dis1.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="82.0" layoutY="119.0" text="Kullanıcı Adı:" AnchorPane.rightAnchor="222.0" />
+      <Label layoutX="82.0" layoutY="174.0" prefHeight="18.0" prefWidth="68.0" text="Şifre:" AnchorPane.rightAnchor="222.0" />
+      <Label fx:id="lbl_sonuc" layoutX="38.0" layoutY="174.0" prefHeight="18.0" prefWidth="26.0" />
+      <ImageView fitHeight="26.0" fitWidth="41.0" layoutX="309.0" layoutY="315.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@cikis.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="41.0" layoutX="137.0" layoutY="313.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@bilgi.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="41.0" layoutX="137.0" layoutY="261.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@giris.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="41.0" layoutX="39.0" layoutY="170.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@sifre.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="41.0" layoutX="38.0" layoutY="115.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@kullanici.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lbl_sonuc" layoutX="69.0" layoutY="214.0" />
+      <Button fx:id="btn_sifre" layoutX="214.0" layoutY="259.0" mnemonicParsing="false" onAction="#btn_sifre_Click" prefHeight="26.0" prefWidth="95.0" style="-fx-background-color: #ffdab9;" text="Şifre Yenile " />
+      <ImageView fitHeight="26.0" fitWidth="41.0" layoutX="317.0" layoutY="261.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@sifre.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
