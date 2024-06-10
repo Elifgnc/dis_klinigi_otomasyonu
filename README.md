@@ -1,4 +1,6 @@
 # dis_klinigi_otomasyonu
+JavaFX ile yazılan , veritabanı MSSQL kullanılarak oluşturulan bir projedir. 
+Tasarım kısmı Eclipse uygulaması kullanılarak SceneBuilder ile oluşturulmuştur.
 
 Diş Kliniği otomasyonunda 3 kullanıcı girişi mevcuttur. Bu girişler 2 doktor , 1 asistan girişinden oluşur.
 
